@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1618566337499,
+  "timestamp": 1618570575284,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -100,7 +100,21 @@
       "patterns": []
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "additives",
+      "patterns": [
+        "\\/\\.\\/assets\\/db\\.json"
+      ],
+      "strategy": "performance",
+      "maxSize": 10,
+      "maxAge": 60000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
   "hashTable": {
     "./10.f4e2e0f9749ebd9b4b81.js": "5eda58d29a89ef858803539558eca6911b2c509b",
     "./11.27df5f92d0d2f37f0a7e.js": "b9350e71d8a6f6f16157320914f6cead78cb6e8c",
