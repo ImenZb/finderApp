@@ -1,0 +1,52 @@
+<ion-header>
+  <app-header title="Liste"></app-header>
+</ion-header>
+<ion-content class="ion-no-padding">
+  <ion-grid class="ion-no-padding">
+    <ion-row class="ion-justify-content-start ion-no-padding">
+      <ion-col class="ion-no-padding" col="12">
+        <ion-segment (ionChange)="segmentChanged($event)" color="medium" value="all" class="ion-no-padding">
+          <ion-segment-button class="ion-no-padding" value="all">
+            <ion-label>All</ion-label>
+          </ion-segment-button>
+          <ion-segment-button class="ion-no-padding" color="danger" value="danger">
+            <ion-icon color="danger" name="square"></ion-icon>
+          </ion-segment-button>
+          <ion-segment-button class="ion-no-padding" color="warning" value="warning">
+            <ion-icon color="warning" name="square"></ion-icon>
+          </ion-segment-button>
+          <ion-segment-button value="tertiary" color="tertiary">
+            <ion-icon color="tertiary" name="square"></ion-icon>
+          </ion-segment-button>
+          <ion-segment-button value="success" color="success">
+            <ion-icon name="square" color="success"></ion-icon>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class="ion-justify-content-start ion-no-padding">
+      <ion-col class="ion-no-padding" col="12">
+        <ion-list class="ion-no-padding ion-no-margin">
+          <ion-item  *ngFor="let item of ((filtered?filteredList:list$) | async)?.slice(min,max)">
+            <ion-thumbnail class="ion-no-margin" slot="start"
+            [style.background]="'var(--ion-color-' + (item.level | color) + ')'">
+              E{{item.id}}
+            </ion-thumbnail>
+            <ion-label class="ion-no-margin" (click)="displayDetails(item)">
+              <h4>{{item.name}}</h4>
+              <p>{{item.type}}</p>
+            </ion-label>
+            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+          </ion-item>
+      </ion-list>
+      <ion-infinite-scroll threshold="100px" (ionInfinite)="loadData($event)">
+        <ion-infinite-scroll-content
+          loadingSpinner="bubbles"
+          loadingText="Loading more data...">
+        </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

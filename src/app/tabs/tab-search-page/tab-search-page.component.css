@@ -1,0 +1,30 @@
+ion-content{
+    --background: var(--ion-color-dark-tint);
+    color: #fff;
+
+}
+
+ion-row,ion-grid{
+    height: 100%;
+}
+
+ion-button{
+    --border-color: #fff;
+    color: #fff;
+}
+
+ion-item{
+    --background: var(--ion-color-dark-tint);
+    --border-color: var(--ion-color-success);
+    width: 70%;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+
+ion-input{
+    color: #fff;
+}
+ion-item ion-label{
+    color: var(--ion-color-medium);
+    font-weight: bold;
+}

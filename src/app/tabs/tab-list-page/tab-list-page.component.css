@@ -1,0 +1,22 @@
+
+ion-thumbnail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+ion-item{
+  --padding-start: 0;
+}
+  
+ion-segment-button{
+  /*--border-color: var(--ion-color-primary);
+  --border-radius: 5px;
+  --border-style: solid;
+  --border-width: 1px;
+  --background-checked: var(--ion-color-tertiary-contrast);*/
+  min-width: auto;
+}
