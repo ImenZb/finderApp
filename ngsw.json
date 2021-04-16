@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1618563133609,
+  "timestamp": 1618564307344,
   "index": "./index.html",
   "assetGroups": [
     {
@@ -68,7 +68,7 @@
         "./common.653c10d70ca28393df4a.js",
         "./favicon.ico",
         "./index.html",
-        "./main.3c52811973fa9f68ef93.js",
+        "./main.f9645395ddb47f8cd4bf.js",
         "./manifest.webmanifest",
         "./polyfills-core-js.eccf552c89e248631548.js",
         "./polyfills-css-shim.03957cf6885d947aac91.js",
@@ -87,6 +87,7 @@
         "ignoreVary": true
       },
       "urls": [
+        "./assets/db.json",
         "./assets/icons/icon-128x128.png",
         "./assets/icons/icon-144x144.png",
         "./assets/icons/icon-152x152.png",
@@ -155,6 +156,7 @@
     "./60.cb5631d5e938f4e4923f.js": "e359cdc15446b964298a9d688c547c2e88598c14",
     "./61.b8fcd3f2b5364960cdcf.js": "9a9594f0cd6661bccfbe284a5fc9d290614cbd30",
     "./9.cc8deaa77f20a5f17fed.js": "35d52fbb9d4ac2e052c9a128058dbd7228735b15",
+    "./assets/db.json": "dd81b623d9612a4523bea3e0f2e7bb1210a1dcc5",
     "./assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "./assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "./assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -165,8 +167,8 @@
     "./assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "./common.653c10d70ca28393df4a.js": "c97a58635edd2c268bac5ea1f2abe39043380b99",
     "./favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "./index.html": "a947f18800d1efd7a3a78e63eeef61198b612027",
-    "./main.3c52811973fa9f68ef93.js": "6ba67f659818a87983e226adcc3ebeb50064d7e4",
+    "./index.html": "41ab30f607cc1a9297fc0f510e004307383bd6e9",
+    "./main.f9645395ddb47f8cd4bf.js": "3534c0d9d50d0b704d502d39bfef704b1def875f",
     "./manifest.webmanifest": "c3b4176198748568907170e023d535c025a044c5",
     "./polyfills-core-js.eccf552c89e248631548.js": "f71279ef311f3c1cecc661b8aabe632959a282f8",
     "./polyfills-css-shim.03957cf6885d947aac91.js": "3f4dd6685f2d8a7a5f6fe2d3fa9e9320d460b112",
